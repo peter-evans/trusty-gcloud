@@ -2,7 +2,7 @@ services:
   - docker
 
 install:
-  - docker build -t trusty-gcloud ./1.2
+  - docker build -t trusty-gcloud .
 
 script:
   - docker images | grep -q trusty-gcloud
