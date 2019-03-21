@@ -1,8 +1,15 @@
 FROM ubuntu:trusty
 
-MAINTAINER Peter Evans <pete.evans@gmail.com>
+LABEL \
+  maintainer="Peter Evans <mail@peterevans.dev>" \
+  org.opencontainers.image.title="trusty-gcloud" \
+  org.opencontainers.image.description="Google Cloud SDK on Ubuntu Trusty." \
+  org.opencontainers.image.authors="Peter Evans <mail@peterevans.dev>" \
+  org.opencontainers.image.url="https://github.com/peter-evans/trusty-gcloud" \
+  org.opencontainers.image.vendor="https://peterevans.dev" \
+  org.opencontainers.image.licenses="MIT"
 
-ENV GCLOUD_VERSION 226.0.0
+ENV GCLOUD_VERSION 239.0.0
 
 # Let the container know that there is no TTY
 ARG DEBIAN_FRONTEND=noninteractive
