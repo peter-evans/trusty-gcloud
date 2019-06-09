@@ -9,7 +9,7 @@ LABEL \
   org.opencontainers.image.vendor="https://peterevans.dev" \
   org.opencontainers.image.licenses="MIT"
 
-ENV GCLOUD_VERSION 239.0.0
+ENV GCLOUD_VERSION 249.0.0
 
 # Let the container know that there is no TTY
 ARG DEBIAN_FRONTEND=noninteractive
