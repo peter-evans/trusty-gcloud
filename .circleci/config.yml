@@ -87,6 +87,6 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
-          image-name: "docker.pkg.github.com/peter-evans/$IMAGE_NAME"
+          image-name: "docker.pkg.github.com/peter-evans/$IMAGE_NAME/$IMAGE_NAME"
           registry-login-steps:
             - run: echo "$GITHUB_PKG_REG_TOKEN" | docker login docker.pkg.github.com -u "peter-evans" --password-stdin
